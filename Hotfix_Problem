@@ -1,0 +1,8 @@
+Corregir error de generación de PDF
+
+Detalles:
+- Se encontró un problema crítico al generar PDF a partir de ciertas plantillas HTML.
+- El error provocaba la pérdida de imágenes incrustadas en el PDF generado.
+- Se implementó una solución para garantizar la inclusión adecuada de todas las imágenes.
+
+Closes #123
