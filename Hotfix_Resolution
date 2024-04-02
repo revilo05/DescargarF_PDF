@@ -1,0 +1,13 @@
+Descripción del Problema
+Al generar PDF a partir de ciertas plantillas HTML, se detectó un error crítico que causaba la pérdida de imágenes incrustadas en el PDF resultante.
+
+Solución Implementada
+Se identificó que el problema estaba relacionado con la conversión incorrecta de las imágenes en el proceso de generación de PDF. Para corregir esto:
+- Se actualizó la biblioteca de conversión de HTML a PDF para manejar adecuadamente las imágenes incrustadas.
+- Se realizó una prueba exhaustiva para verificar que todas las imágenes se incluyan correctamente en el PDF generado.
+
+Impacto
+- Este hotfix aborda un problema crítico que afecta la integridad de los documentos PDF generados por la aplicación.
+- La corrección se implementó de manera efectiva y se ha probado para asegurar que no cause efectos secundarios negativos.
+
+Closes #123
