@@ -1,0 +1,6 @@
+[HttpGet("EditarPlantilla")]
+public IActionResult EditarPlantilla()
+{
+    // Retorna la vista para editar la plantilla
+    return View();
+}
