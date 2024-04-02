@@ -1,0 +1,20 @@
+[HttpPost("EditarPlantilla")]
+public IActionResult EditarPlantillaPost(string nuevaPlantilla)
+{
+    try
+    {
+        // Guarda la nueva plantilla en alguna ubicación o base de datos
+        // Aquí asumo que estás utilizando un sistema de archivos para guardar la plantilla
+
+        // Ejemplo de guardado en un archivo
+        string rutaPlantilla = "ruta/donde/guardar/plantilla.html";
+        System.IO.File.WriteAllText(rutaPlantilla, nuevaPlantilla);
+
+        return RedirectToAction("EditarPlantilla");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error al editar la plantilla: {ex.Message}");
+        return StatusCode(500, "Error interno del servidor" + ex);
+    }
+}
